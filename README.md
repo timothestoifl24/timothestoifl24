@@ -1,9 +1,7 @@
 
 # Hi, I'm Timothé! 👋
 ## 🚀 About Me
-I am an IT system administrator and developer from Vienna, working as an IT system administrator for real-time positioning applications within the railway sector.
-
-I have a genuine passion for technology and a desire to expand my knowledge for future personal and professional projects. Through my experience and expertise, I hope to inspire others to continue learning as technology evolves.
+I'm an IT system administrator and developer based in Vienna, specializing in real-time positioning applications within the railway sector. My passion for technology drives me to continuously expand my knowledge and skills, both for personal and professional growth. Through my experience, I aim to inspire others to keep learning as technology evolves.
 
 ## 🛠 My IT Skills and Knowledge
 
@@ -58,3 +56,4 @@ I have a genuine passion for technology and a desire to expand my knowledge for 
 ## 🔗 Links
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=Instagram&logoColor=white&style=for-the-badge)](https://www.instagram.com/timothestoifl24/)
 [![X](https://img.shields.io/badge/X-000?logo=x&logoColor=white&style=for-the-badge)](https://twitter.com/timothestoifl24)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/timothestoifl)
