@@ -1,7 +1,7 @@
 .
 └── docs
-    ├── README.md
+    ├── home.md
     ├── guide.md
-    ├── _sidebar.md
-    └── de-de
-        └── README.md
+    ├── _navbar.md
+    └── de
+        └── home.md
