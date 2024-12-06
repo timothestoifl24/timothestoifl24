@@ -160,7 +160,7 @@
       homepage: 'home.md',
       // coverpage      : '_coverpage.md',
       loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || false),
-      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || standalone && !navbar || false),
+      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || standalone && !navbar || true),
       mergeNavbar: false,
       externalLinkTarget: standalone ? '_top' : (getURLParameterByName(['standalone', 'embedded'], '_top', '_blank')),
       loadFooter: (getURLParameterByName('footer') || footer || false),
@@ -193,7 +193,7 @@
       toc: {
         scope: '.markdown-section',
         headings: 'h2,h3',
-        title: '',
+        title: 'Timothé Stoifl',
       },
 
       // CUSTOM PLUGINS
@@ -260,7 +260,6 @@
             }
 
             /* JS to change Embedly cards to light or dark theme based on system setting when using the light + dark theme (uncomment to use) */
-            /*
             const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
             if (!(embeds.length === 0)) {
                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)  {
@@ -283,7 +282,6 @@
               });
 
             }
-            */
 
             next(htmlElement.innerHTML);
 
