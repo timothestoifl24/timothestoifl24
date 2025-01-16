@@ -1,19 +1,25 @@
 
 # Hi, I'm Timothé! 👋
 ## 🚀 About Me
-I'm an IT system administrator and developer based in Vienna, specializing in real-time positioning applications within the railway sector. My passion for technology drives me to continuously expand my knowledge and skills, both for personal and professional growth. Through my experience, I aim to inspire others to keep learning as technology evolves.
+I'm an IT system administrator and developer based in Vienna, specializing in digital workspace solutions and container management within the railway sector. My passion for technology drives me to continuously expand my knowledge and skills, both for personal and professional growth. Through my experience, I aim to inspire others to keep learning as technology evolves.
 
 ## 🛠 My IT Skills and Knowledge
 
-### Automation
+### Infrastructure Automation
 [![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)](https://www.ansible.com/)
 
-### Microservices Tools
+### Virtualization Solutions
+[![VMware](https://img.shields.io/badge/vmware-607078?style=for-the-badge&logo=vmware&logoColor=white)](https://www.vmware.com/)
+
+### Container Management
 #### Container Software
 [![Docker](https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Podman](https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white)](https://podman.io/)
 #### Container Orchestration
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
+
+### Digital Workspace Solution
+[![Citrix](https://img.shields.io/badge/citrix-452170?style=for-the-badge&logo=citrix&logoColor=white)](https://www.citrix.com/)
 
 ### Databases
 #### NoSQL
@@ -40,6 +46,7 @@ I'm an IT system administrator and developer based in Vienna, specializing in re
 [![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
 [![JSON](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)](https://json.org/)
 [![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](https://daringfireball.net/projects/markdown/)
+[![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![YAML](https://img.shields.io/badge/YAML-CB171E?logo=yaml&style=for-the-badge&logoColor=white)](https://yaml.org/)
 
 ### Search Engine/Data Visualization
