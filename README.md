@@ -22,9 +22,8 @@ I'm an IT system administrator and developer based in Vienna, specializing in di
 [![Podman](https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white)](https://podman.io/)
 
 #### Container Orchestration
-[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/) (In Training)
-[![Red Hat OpenShift](https://img.shields.io/badge/redhatopenshift-EE0000?style=for-the-badge&logo=redhatopenshift&logoColor=red&color=black)](https://openshift.com/)
-
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/) (In Training)  
+[![Red Hat OpenShift](https://img.shields.io/badge/redhatopenshift-EE0000?style=for-the-badge&logo=redhatopenshift&logoColor=red&color=black)](https://openshift.com/) (In Training)
 
 ### Digital Workspace Solution
 [![Citrix Virtual Apps & Desktops](https://img.shields.io/badge/citrix-452170?style=for-the-badge&logo=citrix&logoColor=white)](https://www.citrix.com/)
@@ -55,7 +54,8 @@ I'm an IT system administrator and developer based in Vienna, specializing in di
 ### Programming Languages
 [![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)  
 [![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)  
-[![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
+[![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)  
+[![Go](https://img.shields.io/badge/GO-00ADD8?style=for-the-badge&logo=Go&logoColor=white)](https://go.dev/) (In Training)
 
 ## 🔗 Links
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=Instagram&logoColor=white&style=for-the-badge)](https://www.instagram.com/timothestoifl24/)
