@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timothé Stoifl — IT Systems Administrator</title>
+<meta name="description" content="Timothé Stoifl — IT system administrator and developer based in Vienna, specializing in digital workspace solutions and container management.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0a0e14;
+    --bg-alt: #0d1117;
+    --surface: #12161f;
+    --surface-2: #161b22;
+    --border: #262c37;
+    --border-strong: #30363d;
+    --text: #c9d1d9;
+    --text-dim: #8b949e;
+    --text-faint: #5b6472;
+    --accent: #39d98a;
+    --accent-dim: #2ea36b;
+    --accent-2: #58a6ff;
+    --mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html{ scroll-behavior: smooth; }
+
+  body{
+    margin: 0;
+    background: var(--bg);
+    background-image:
+      radial-gradient(circle at 15% 0%, rgba(57,217,138,0.06), transparent 40%),
+      radial-gradient(circle at 85% 20%, rgba(88,166,255,0.05), transparent 40%);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a{ color: var(--accent-2); text-decoration: none; }
+  a:hover{ text-decoration: underline; }
+
+  .wrap{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 5rem;
+  }
+
+  /* terminal window chrome */
+  .term{
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+  }
+  .term-bar{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--border);
+  }
+  .dot{ width: 11px; height: 11px; border-radius: 50%; }
+  .dot.red{ background: #ff5f56; }
+  .dot.yellow{ background: #ffbd2e; }
+  .dot.green{ background: #27c93f; }
+  .term-title{
+    margin-left: 8px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--text-faint);
+  }
+  .term-body{
+    padding: 1.75rem 1.75rem 2rem;
+    font-family: var(--mono);
+  }
+  .prompt{ color: var(--accent); }
+  .prompt-cmd{ color: var(--text); }
+  .cursor{
+    display: inline-block;
+    width: 8px;
+    height: 1.1em;
+    background: var(--accent);
+    vertical-align: text-bottom;
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink{ 50%{ opacity: 0; } }
+
+  h1{
+    font-family: var(--mono);
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+    font-weight: 700;
+    margin: 0.6rem 0 0.2rem;
+    color: #fff;
+  }
+  .role{
+    font-family: var(--mono);
+    font-size: 0.95rem;
+    color: var(--accent);
+    margin: 0 0 1.1rem;
+  }
+  .about{
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    max-width: 60ch;
+  }
+
+  .location{
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    color: var(--text-faint);
+    margin-top: 1rem;
+  }
+
+  section{ margin-top: 3rem; }
+
+  .section-label{
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--text-faint);
+    letter-spacing: 0.04em;
+    margin: 0 0 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .section-label::before{ content: "//"; color: var(--accent-dim); }
+
+  .cat-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem;
+  }
+  .cat{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.1rem 1.2rem;
+  }
+  .cat h3{
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-faint);
+    margin: 0 0 0.75rem;
+    font-weight: 600;
+  }
+  .pills{ display: flex; flex-wrap: wrap; gap: 0.45rem; }
+  .pill{
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--text);
+    background: var(--surface-2);
+    border: 1px solid var(--border-strong);
+    border-radius: 5px;
+    padding: 0.28rem 0.6rem;
+    white-space: nowrap;
+  }
+  .pill.training{
+    color: var(--accent);
+    border-color: rgba(57,217,138,0.35);
+    background: rgba(57,217,138,0.06);
+  }
+  .pill.training::after{
+    content: "training";
+    margin-left: 0.5em;
+    font-size: 0.68rem;
+    color: var(--accent-dim);
+  }
+
+  .links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .link-btn{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .link-btn:hover{
+    text-decoration: none;
+    border-color: var(--accent-dim);
+    color: var(--accent);
+  }
+
+  footer{
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--text-faint);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  @media (max-width: 480px){
+    .wrap{ padding: 2rem 1.1rem 3rem; }
+    .term-body{ padding: 1.25rem 1.1rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="term">
+    <div class="term-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="term-title">timothe@vienna:~</span>
+    </div>
+    <div class="term-body">
+      <div><span class="prompt">$</span> <span class="prompt-cmd">whoami</span></div>
+      <h1>Timothé Stoifl</h1>
+      <p class="role">IT systems administrator &amp; developer</p>
+      <p class="about">
+        I'm an IT system administrator and developer based in Vienna, specializing in digital
+        workspace solutions and container management within the railway sector. My passion for
+        technology drives me to continuously expand my knowledge and skills, both for personal
+        and professional growth. Through my experience, I aim to inspire others to keep learning
+        as technology evolves.
+      </p>
+      <p class="location">📍 Vienna, Austria<span class="cursor"></span></p>
+    </div>
+  </div>
+
+  <section>
+    <p class="section-label">skills --all</p>
+    <div class="cat-grid">
+
+      <div class="cat">
+        <h3>Automation &amp; IaC</h3>
+        <div class="pills">
+          <span class="pill">Terraform</span>
+          <span class="pill">Ansible</span>
+        </div>
+      </div>
+
+      <div class="cat">
+        <h3>Virtualization &amp; containers</h3>
+        <div class="pills">
+          <span class="pill">VMware</span>
+          <span class="pill">Proxmox</span>
+          <span class="pill">Docker</span>
+          <span class="pill">Podman</span>
+          <span class="pill training">Kubernetes</span>
+          <span class="pill training">Red Hat OpenShift</span>
+        </div>
+      </div>
+
+      <div class="cat">
+        <h3>Operating systems</h3>
+        <div class="pills">
+          <span class="pill">Debian</span>
+          <span class="pill">Ubuntu</span>
+          <span class="pill">RHEL</span>
+          <span class="pill">Fedora</span>
+          <span class="pill">Windows Server</span>
+        </div>
+      </div>
+
+      <div class="cat">
+        <h3>Databases</h3>
+        <div class="pills">
+          <span class="pill">MongoDB</span>
+          <span class="pill">MySQL</span>
+          <span class="pill">MariaDB</span>
+          <span class="pill">PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="cat">
+        <h3>Workspace &amp; monitoring</h3>
+        <div class="pills">
+          <span class="pill">Citrix Virtual Apps &amp; Desktops</span>
+          <span class="pill">Checkmk</span>
+        </div>
+      </div>
+
+      <div class="cat">
+        <h3>Programming languages</h3>
+        <div class="pills">
+          <span class="pill">Bash</span>
+          <span class="pill">Python</span>
+          <span class="pill">C</span>
+          <span class="pill training">Go</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <p class="section-label">links --contact</p>
+    <div class="links">
+      <a class="link-btn" href="https://www.linkedin.com/in/timothestoifl" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="link-btn" href="https://www.instagram.com/timothestoifl24/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a class="link-btn" href="https://github.com/timothestoifl24" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>timothe.stoifl.app</span>
+    <span>built with bash, coffee &amp; a healthy amount of yaml</span>
+  </footer>
+
+</div>
+</body>
+</html>
