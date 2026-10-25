@@ -1,7 +1,7 @@
 
 # Hi, I'm Timothé! 👋
 ## 🚀 About Me
-I'm an IT system administrator and developer based in Vienna, specializing in digital workspace solutions and container management within the railway sector. My passion for technology drives me to continuously expand my knowledge and skills, both for personal and professional growth. Through my experience, I aim to inspire others to keep learning as technology evolves.
+I'm a IT System Engineer and hobby developer based in Vienna, specializing in digital workspace solutions and container management within the railway sector. My passion for technology drives me to continuously expand my knowledge and skills, both for personal and professional growth. Through my experience, I aim to inspire others to keep learning as technology evolves.
 
 ## My IT Skills and Knowledge
 
