@@ -58,5 +58,4 @@ I'm a IT System Engineer and hobby developer based in Vienna, specializing in di
 [![Go](https://img.shields.io/badge/GO-00ADD8?style=for-the-badge&logo=Go&logoColor=white)](https://go.dev/) (In Training)
 
 ## 🔗 Links
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=Instagram&logoColor=white&style=for-the-badge)](https://www.instagram.com/timothestoifl24/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/timothestoifl)
