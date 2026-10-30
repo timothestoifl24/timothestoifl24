@@ -1,6 +1,6 @@
 stages:
-  - sync
   - publish
+  - sync
 
 variables:
   GIT_DEPTH: 0
