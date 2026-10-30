@@ -1,8 +1,24 @@
 stages:
   - sync
+  - publish
 
 variables:
   GIT_DEPTH: 0
+
+pages:
+  stage: publish
+  image: alpine:latest
+
+  script:
+    - mkdir public
+    - cp -r index.html assets public/
+
+  artifacts:
+    paths:
+      - public
+
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
 
 sync_to_github:
   stage: sync
