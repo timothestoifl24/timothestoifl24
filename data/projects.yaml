@@ -1,0 +1,42 @@
+# Project list for https://timothestoifl24.dev
+#
+# One entry per project. The build fails if a required field is missing,
+# a status is unknown, a slug is duplicated, or a preview file is missing.
+#
+# Fields
+#   slug       required  kebab-case, unique; also the preview file name
+#   name       required
+#   one_line   required  one sentence, ~120 chars max
+#   category   required  shown as a small label on the card
+#   status     required  active | maintained | paused | archived
+#   featured   optional  true sorts the project to the top of "My Projects" (default false)
+#   stack      required  list of short tags
+#   repo       required  repository URL
+#   site       optional  project site / demo; the preview image links here (falls back to repo)
+#   preview    optional  path under site/public/, default previews/<slug>.svg (copy the repo's social-preview.svg there);
+#                        without one the card shows a plain name panel
+#   created    required  date the project started, YYYY-MM-DD (shown as "Created: 13 August 2026")
+
+- slug: bulk-mailer
+  name: Bulk Mailer
+  one_line: "Send one message to many recipients: typed, pasted, CSV or pulled from LDAP / Active Directory. Runs fully offline." # from repo README; TODO: shorten if you like
+  category: Apps/Tools
+  status: active # TODO: confirm (repo is public, not archived)
+  featured: true
+  stack: [Python, FastAPI, SQLAlchemy, PostgreSQL, LDAP, Docker] # from requirements.txt / Dockerfile; TODO: confirm
+  repo: https://github.com/timothestoifl24/bulk-mailer
+  site: https://bulkmailer.timothestoifl24.dev/ # from repo homepage field (repo lists it as http://); TODO: confirm
+  preview: previews/bulk-mailer.svg
+  created: 2026-08-13 # date of the first commit; TODO: confirm
+
+- slug: statora
+  name: Statora
+  one_line: "Self-hosted uptime monitoring and status pages: HTTP/TCP/ping/DNS checks, incidents, maintenance and SSO." # from repo description; TODO: shorten if you like
+  category: Apps/Tools
+  status: active # TODO: confirm (repo is public, not archived, v1.2.0)
+  featured: true
+  stack: [Python, FastAPI, PostgreSQL, Redis, Docker] # from pyproject.toml / Dockerfile; TODO: confirm
+  repo: https://github.com/timothestoifl24/statora
+  site: https://statora.timothestoifl24.dev/ # from repo homepage field (repo lists it as http://); TODO: confirm HTTPS works
+  preview: previews/statora.svg # copied from statora/assets/social-preview.svg
+  created: 2026-10-10 # date of the first commit; TODO: confirm

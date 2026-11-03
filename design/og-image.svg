@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Source for site/public/og-image.png. TODO: tweak wording/design if you like, then re-render (see README). -->
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <rect x="0" y="0" width="1200" height="10" fill="#1d5fd0"/>
+  <rect x="80" y="120" width="96" height="96" rx="22" fill="#1d5fd0"/>
+  <path d="M107 148l15 15-15 15M128 181h21" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(0,5)"/>
+  <text x="80" y="330" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="68" font-weight="700" fill="#1b1b1f">timothestoifl24.dev</text>
+  <text x="80" y="400" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="34" fill="#3c3c43">Hobby projects by Timothé Stoifl</text>
+  <text x="80" y="450" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="28" fill="#67676c">Homelab · Automation · Self-hosted tools</text>
+</svg>

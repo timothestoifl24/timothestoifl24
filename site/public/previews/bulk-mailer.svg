@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <!-- GitHub social preview. 1280x640 is the size GitHub renders best, and
+       everything meaningful stays inside a 40px margin because the card gets
+       cropped to different aspect ratios depending on where it is unfurled. -->
+
+  <rect width="1280" height="640" fill="#ffffff"/>
+  <!-- An indigo brand bar along the bottom: reads as deliberate design at a
+       glance and survives cropping better than a full-bleed background. The
+       short amber run at its left end is the accent colour, used sparingly. -->
+  <rect x="0" y="624" width="1280" height="16" fill="#4F46E5"/>
+  <rect x="0" y="624" width="160" height="16" fill="#F59E0B"/>
+
+  <!-- The logo mark, same geometry as assets/logo.svg scaled to 144px. -->
+  <g transform="translate(568,92) scale(1.5)">
+    <rect y="5" width="96" height="91" rx="24" fill="#3730A3"/>
+    <rect width="96" height="90" rx="24" fill="#4F46E5"/>
+    <polygon points="86,28 24,56 50,64 58,86" fill="#3730A3" opacity=".6"/>
+    <path d="M12 64h12M8 74h16M16 84h8" stroke="#A5B4FC" stroke-width="5"
+          stroke-linecap="round"/>
+    <polygon points="80,18 16,46 44,54" fill="#fff"/>
+    <polygon points="80,18 44,54 54,78" fill="#C7D2FE"/>
+    <polygon points="44,54 38,70 54,78" fill="#818CF8"/>
+  </g>
+
+  <g text-anchor="middle" font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <text x="640" y="358" font-size="84" font-weight="700" letter-spacing="-1.5" fill="#0F172A">Bulk Mailer</text>
+    <text x="640" y="418" font-size="31" fill="#475569">Send one message to many recipients</text>
+    <text x="640" y="462" font-size="31" fill="#475569">— typed, pasted, CSV, or straight from LDAP.</text>
+    <text x="640" y="546" font-size="24" font-weight="500" fill="#4338CA">Self-hosted · Docker · PostgreSQL or SQLite</text>
+  </g>
+</svg>

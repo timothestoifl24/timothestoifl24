@@ -1,0 +1,19 @@
+{
+  "name": "timothestoifl24-dev",
+  "private": true,
+  "type": "module",
+  "description": "Project dashboard for timothestoifl24.dev",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vitepress dev site",
+    "build": "vitepress build site",
+    "preview": "vitepress preview site"
+  },
+  "devDependencies": {
+    "js-yaml": "5.5.0",
+    "vitepress": "1.6.4",
+    "vue": "3.5.44"
+  }
+}
