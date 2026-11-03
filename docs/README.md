@@ -1,6 +1,6 @@
 # timothestoifl24.dev: site documentation
 
-Source of **[timothestoifl24.dev](https://timothestoifl24.dev)**, a dashboard of my hobby projects.
+Source of **[www.timothestoifl24.dev](https://www.timothestoifl24.dev)**, a dashboard of my hobby projects.
 Profile & CV: **[timothe.stoifl.app](https://timothe.stoifl.app)**
 
 This file documents how the site works. The short [README](../README.md) in the repo root is what shows on my GitHub profile.
@@ -105,10 +105,12 @@ Dependencies are pinned to exact versions (`package.json` + `package-lock.json`)
 
 ## DNS records for the custom domain
 
+The site's primary address is **`www.timothestoifl24.dev`** (set in `site/public/CNAME`).
 Set these at the DNS provider for `timothestoifl24.dev`:
 
 | Host  | Type  | Value |
 |-------|-------|-------|
+| `www` | CNAME | `timothestoifl24.github.io.` |
 | `@`   | A     | `185.199.108.153` |
 | `@`   | A     | `185.199.109.153` |
 | `@`   | A     | `185.199.110.153` |
@@ -117,10 +119,9 @@ Set these at the DNS provider for `timothestoifl24.dev`:
 | `@`   | AAAA  | `2606:50c0:8001::153` |
 | `@`   | AAAA  | `2606:50c0:8002::153` |
 | `@`   | AAAA  | `2606:50c0:8003::153` |
-| `www` | CNAME | `timothestoifl24.github.io.` |
 | `_github-pages-challenge-timothestoifl24` | TXT | *value shown by GitHub when you verify the domain (recommended)* |
 
-- With these records, GitHub redirects `www.timothestoifl24.dev` to the apex.
+- The `www` CNAME serves the site. The apex A/AAAA records are optional but recommended: with them, GitHub redirects `timothestoifl24.dev` to `www.timothestoifl24.dev`.
 - Remove any other A/AAAA/ALIAS records on `@`, and don't use a wildcard `*` record.
 - `.dev` is on the HSTS preload list, so browsers only use HTTPS. The site won't load at all until GitHub has issued its certificate (usually minutes, up to ~24 h after DNS resolves).
 - Existing records for subdomains such as `statora.timothestoifl24.dev` aren't affected.
@@ -128,20 +129,20 @@ Set these at the DNS provider for `timothestoifl24.dev`:
 Check propagation:
 
 ```bash
-dig +short timothestoifl24.dev A
+dig +short www.timothestoifl24.dev CNAME
 ```
 
 ```bash
-dig +short www.timothestoifl24.dev CNAME
+dig +short timothestoifl24.dev A
 ```
 
 ## Manual setup checklist
 
 - [ ] **DNS:** create the records above.
-- [ ] **Verify the domain** (protects against domain takeover): GitHub → *Settings* (your account) → *Pages* → *Add a domain* → `timothestoifl24.dev` → add the TXT record → *Verify*.
+- [ ] **Verify the domain** (protects against domain takeover): GitHub → *Settings* (your account) → *Pages* → *Add a domain* → `timothestoifl24.dev` (verifying the apex also covers `www`) → add the TXT record → *Verify*.
 - [ ] **Enable Pages:** this repo → *Settings* → *Pages* → *Build and deployment* → Source: **GitHub Actions**.
 - [ ] Push to `main` (or run the workflow manually) and wait for the first deployment to go green.
-- [ ] **Custom domain:** *Settings* → *Pages* → Custom domain: `timothestoifl24.dev` → *Save*, then wait for the DNS check to pass.
+- [ ] **Custom domain:** *Settings* → *Pages* → Custom domain: `www.timothestoifl24.dev` → *Save*, then wait for the DNS check to pass.
 - [ ] **HTTPS:** once the certificate is issued, tick **Enforce HTTPS**.
-- [ ] Open https://timothestoifl24.dev and https://www.timothestoifl24.dev to confirm both work.
+- [ ] Open https://www.timothestoifl24.dev, and check that https://timothestoifl24.dev redirects to it.
 - [ ] **Content:** resolve every `# TODO` in `data/projects.yaml`, and adjust the intro in `site/index.md` if needed.

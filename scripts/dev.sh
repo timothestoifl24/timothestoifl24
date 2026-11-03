@@ -60,7 +60,7 @@ case "${1:-}" in
       --root-dir /input/site/.vitepress/dist \
       --fallback-extensions html \
       --exclude 'linkedin\.com' \
-      --exclude '^https://timothestoifl24\.dev' \
+      --exclude '^https://(www\.)?timothestoifl24\.dev' \
       --no-progress \
       'site/.vitepress/dist/**/*.html'
     ;;

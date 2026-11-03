@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-const SITE_URL = 'https://timothestoifl24.dev'
+const SITE_URL = 'https://www.timothestoifl24.dev'
 const PROFILE_URL = 'https://timothe.stoifl.app'
 const GITHUB_URL = 'https://github.com/timothestoifl24'
 const LINKEDIN_URL = 'https://www.linkedin.com/in/timothestoifl'

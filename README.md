@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://timothestoifl24.dev">
+  <a href="https://www.timothestoifl24.dev">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset=".github/readme/profile-panel-dark.svg">
       <img src=".github/readme/profile-panel-light.svg" alt="Timothé Stoifl, IT System Engineer &amp; Hobby Developer" width="560">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://timothestoifl24.dev">Projects</a> ·
+  <a href="https://www.timothestoifl24.dev">Projects</a> ·
   <a href="https://timothe.stoifl.app">My Profile</a> ·
   <a href="https://www.linkedin.com/in/timothestoifl">LinkedIn</a>
 </p>
@@ -37,7 +37,7 @@
   </tr>
 </table>
 
-All projects: **[timothestoifl24.dev](https://timothestoifl24.dev)**
+All projects: **[www.timothestoifl24.dev](https://www.timothestoifl24.dev)**
 
 <a href="https://ko-fi.com/Z4F028KJ68"><img src="https://img.shields.io/badge/Buy_me_a_coffee-72a4f2?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Buy me a coffee on Ko-fi"></a>
 
