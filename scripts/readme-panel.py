@@ -2,7 +2,7 @@
 """Regenerate the profile panel images used in README.md.
 
 Writes .github/readme/profile-panel-{light,dark}.svg with site/public/photo.jpg
-embedded, so the README shows the same panel as timothestoifl24.dev.
+embedded, so the README shows the same panel as www.timothestoifl24.dev.
 Run from anywhere:  python3 scripts/readme-panel.py
 """
 import base64

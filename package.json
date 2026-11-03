@@ -2,7 +2,7 @@
   "name": "timothestoifl24-dev",
   "private": true,
   "type": "module",
-  "description": "Project dashboard for timothestoifl24.dev",
+  "description": "Project dashboard for www.timothestoifl24.dev",
   "engines": {
     "node": ">=22"
   },
@@ -15,5 +15,8 @@
     "js-yaml": "5.5.0",
     "vitepress": "1.6.4",
     "vue": "3.5.44"
+  },
+  "overrides": {
+    "vite": "6.4.5"
   }
 }

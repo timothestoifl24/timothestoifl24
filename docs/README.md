@@ -1,4 +1,4 @@
-# timothestoifl24.dev: site documentation
+# www.timothestoifl24.dev: site documentation
 
 Source of **[www.timothestoifl24.dev](https://www.timothestoifl24.dev)**, a dashboard of my hobby projects.
 Profile & CV: **[timothe.stoifl.app](https://timothe.stoifl.app)**
@@ -105,26 +105,17 @@ Dependencies are pinned to exact versions (`package.json` + `package-lock.json`)
 
 ## DNS records for the custom domain
 
-The site's primary address is **`www.timothestoifl24.dev`** (set in `site/public/CNAME`).
-Set these at the DNS provider for `timothestoifl24.dev`:
+The site lives only at **`www.timothestoifl24.dev`** (set in `site/public/CNAME`). The bare domain `timothestoifl24.dev` isn't used.
+Set these at your DNS provider:
 
 | Host  | Type  | Value |
 |-------|-------|-------|
 | `www` | CNAME | `timothestoifl24.github.io.` |
-| `@`   | A     | `185.199.108.153` |
-| `@`   | A     | `185.199.109.153` |
-| `@`   | A     | `185.199.110.153` |
-| `@`   | A     | `185.199.111.153` |
-| `@`   | AAAA  | `2606:50c0:8000::153` |
-| `@`   | AAAA  | `2606:50c0:8001::153` |
-| `@`   | AAAA  | `2606:50c0:8002::153` |
-| `@`   | AAAA  | `2606:50c0:8003::153` |
-| `_github-pages-challenge-timothestoifl24` | TXT | *value shown by GitHub when you verify the domain (recommended)* |
+| `_github-pages-challenge-timothestoifl24` | TXT | *value shown by GitHub when you verify the domain* |
 
-- The `www` CNAME serves the site. The apex A/AAAA records are optional but recommended: with them, GitHub redirects `timothestoifl24.dev` to `www.timothestoifl24.dev`.
-- Remove any other A/AAAA/ALIAS records on `@`, and don't use a wildcard `*` record.
-- `.dev` is on the HSTS preload list, so browsers only use HTTPS. The site won't load at all until GitHub has issued its certificate (usually minutes, up to ~24 h after DNS resolves).
-- Existing records for subdomains such as `statora.timothestoifl24.dev` aren't affected.
+- Don't add a wildcard `*` record.
+- `.dev` is on the HSTS preload list, so browsers only use HTTPS. The site won't load until GitHub has issued its certificate (usually minutes, up to ~24 h after DNS resolves).
+- Records for other subdomains such as `statora.timothestoifl24.dev` aren't affected.
 
 Check propagation:
 
@@ -132,17 +123,13 @@ Check propagation:
 dig +short www.timothestoifl24.dev CNAME
 ```
 
-```bash
-dig +short timothestoifl24.dev A
-```
-
 ## Manual setup checklist
 
-- [ ] **DNS:** create the records above.
-- [ ] **Verify the domain** (protects against domain takeover): GitHub → *Settings* (your account) → *Pages* → *Add a domain* → `timothestoifl24.dev` (verifying the apex also covers `www`) → add the TXT record → *Verify*.
-- [ ] **Enable Pages:** this repo → *Settings* → *Pages* → *Build and deployment* → Source: **GitHub Actions**.
-- [ ] Push to `main` (or run the workflow manually) and wait for the first deployment to go green.
-- [ ] **Custom domain:** *Settings* → *Pages* → Custom domain: `www.timothestoifl24.dev` → *Save*, then wait for the DNS check to pass.
-- [ ] **HTTPS:** once the certificate is issued, tick **Enforce HTTPS**.
-- [ ] Open https://www.timothestoifl24.dev, and check that https://timothestoifl24.dev redirects to it.
+- [x] **DNS:** create the records above.
+- [x] **Verify the domain** (protects against domain takeover): GitHub → *Settings* (your account) → *Pages* → *Add a domain* → add the TXT record → *Verify*.
+- [x] **Enable Pages:** this repo → *Settings* → *Pages* → *Build and deployment* → Source: **GitHub Actions**.
+- [x] Push to `main` (or run the workflow manually) and wait for the first deployment to go green.
+- [x] **Custom domain:** *Settings* → *Pages* → Custom domain: `www.timothestoifl24.dev` → *Save*, then wait for the DNS check to pass.
+- [x] **HTTPS:** once the certificate is issued, tick **Enforce HTTPS**.
+- [x] Open https://www.timothestoifl24.dev and check it loads.
 - [ ] **Content:** resolve every `# TODO` in `data/projects.yaml`, and adjust the intro in `site/index.md` if needed.

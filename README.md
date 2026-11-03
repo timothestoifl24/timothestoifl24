@@ -41,4 +41,4 @@ All projects: **[www.timothestoifl24.dev](https://www.timothestoifl24.dev)**
 
 <a href="https://ko-fi.com/Z4F028KJ68"><img src="https://img.shields.io/badge/Buy_me_a_coffee-72a4f2?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Buy me a coffee on Ko-fi"></a>
 
-<sub>This repo also holds the source of timothestoifl24.dev. How it works: [docs/README.md](docs/README.md).</sub>
+<sub>This repo also holds the source of www.timothestoifl24.dev. How it works: [docs/README.md](docs/README.md).</sub>

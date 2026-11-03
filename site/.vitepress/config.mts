@@ -11,7 +11,7 @@ const DESCRIPTION =
 export default defineConfig({
   lang: 'en',
   title: TITLE,
-  titleTemplate: ':title · timothestoifl24.dev',
+  titleTemplate: ':title · www.timothestoifl24.dev',
   description: DESCRIPTION,
   cleanUrls: true,
   lastUpdated: false,
@@ -26,7 +26,7 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#1b1b1f', media: '(prefers-color-scheme: dark)' }],
     ['meta', { name: 'author', content: 'Timothé Stoifl' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:site_name', content: 'timothestoifl24.dev' }],
+    ['meta', { property: 'og:site_name', content: 'www.timothestoifl24.dev' }],
     ['meta', { property: 'og:image', content: `${SITE_URL}/og-image.png` }],
     ['meta', { property: 'og:image:width', content: '1200' }],
     ['meta', { property: 'og:image:height', content: '630' }],
@@ -38,7 +38,7 @@ export default defineConfig({
     if (pageData.isNotFound) return [['meta', { name: 'robots', content: 'noindex' }]]
     const route = pageData.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, '')
     const url = `${SITE_URL}/${route}`
-    const title = pageData.title ? `${pageData.title} · timothestoifl24.dev` : siteData.title
+    const title = pageData.title ? `${pageData.title} · www.timothestoifl24.dev` : siteData.title
     const description = pageData.description || siteData.description
     return [
       ['link', { rel: 'canonical', href: url }],
@@ -51,7 +51,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    siteTitle: 'timothestoifl24.dev',
+    siteTitle: 'www.timothestoifl24.dev',
     logo: { src: '/favicon.svg', alt: '' },
     nav: [
       { text: 'Home', link: '/' },
